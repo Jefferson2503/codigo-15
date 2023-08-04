@@ -1,5 +1,6 @@
 ## PASOS PARA SUBIR NUEVOS REPOSITORIOS
-1.-ls #listar archivos
+```sh
+1.-ls #listar archivos >
 2.-git init #es para inicializar , se usa solo para una vez y primera vez por proyecto. tmabien crea una carpeta oculta(ls -a)
 3.-git branch -m main #para cambiar el nombre de la rama
 4.-git status  #para ver el estado, para ver que proyectos estan agregados.
@@ -9,8 +10,11 @@
 8.-git config --list #es para ver mi listado de configuracion.
 9.-git commit -m "mi primera pagina web"  #es para generar un comit
 10.-git push origin main #es para subir al repositorio.
+```
 
 ## PASOS PARA UPDATE EL REPOSITORIO(SUBIR CAMBIOS AL GITHUB)
+```sh
 1.-git add .
 2.-git commit -m ""
 3.-git push origin main
+```
