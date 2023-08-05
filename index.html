@@ -1,49 +1,80 @@
 <!Doctype html>
 <html lang="es"> <!--el lang es para saber en que idioma esta-->
-
   <head>
-    <meta charset="utf-8"><!----Es para permitir tildes o la letra enne , todo meta va dentro del head-->
-    <title>DESARROLLO-FULLSTACK:JEFFERSON MAYO EGOAVIL</title>
+    <meta charset="utf-8" />
+    <title>Mi Portafolio Web</title>
   </head>
+  <style>
+    * {
+        background-color: #111827;
+        color: #ffffff;
+        font-family: Arial, sans-serif;
+    }
+  </style>
   <body>
-    <a href="./galeria.html">Galeria de redes sociales</a>
-    <h1>Mi primer titulo</h1>
-    <h2>Mi primer titulo</h2>
-    <h3>Mi primer titulo</h3>
-    <h4>Mi primer titulo</h4>
-    <h5>Mi primer titulo</h5>
-    <h6>Mi primer titulo</h6>
-    <p>
-      <strong>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit.Obcaecati sunt quasi explicabo aut ratione inventore
-      </strong>
-    </p>
-    <img src="https://holatelcel.com/wp-content/uploads/2021/06/capitan-america-.png" alt="capitan-america"
-    width="300" height="300"/>   <!----el src, alt,width y height se llaman atributos-->
-    <p>
-    <img src="./images/SES.png" alt="SES-AWS" width="400" height="200"/>
-    </p>
-    <div style="border: solid red">
-      <h1 style="border: solid blue;">Mi primer div</h1>  <!----etiquetas inline-->
-      <p style="border: solid green;">esto es un parrafo</p>
-      <img style="border: solid orange;" src="./images/SES.png" alt="aws" width="200" />
-      <img style="border: solid orange;" src="./images/SES.png" alt="aws" width="200" />
-
-    </div>
+    <nav>
+        <ul>
+            <li><a href="####">Inicio</a></li>
+            <li><a href="####">Proyectos</a></li>
+            <li><a href="####">Habilidades</a></li>
+            <li><a href="####">Habilidades</a></li>
+            <li><a href="####">Contacto</a></li>
+        </ul>
+    </nav>
     <section>
-      <div>
-        <a href="https:facebook.com" style="border: solid;" target="_blank">
-          <img src="data:image/png;base64,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" alt="facebook" width="20" />  
-          facebook
-        </a>
-      </div>
+        <div>
+            <P>👋Hola soy</P>
+            <h1>Jefferson</h1>
+            <p>Desarrollador Web</p>
+        </div>
+        <div>
+            <img src="./images/Project/coding.svg" alt="developer" />
+        </div>
     </section>
-    <!-----GALERIA DE REDES SOCIALES---->
     <section>
-
-
-
+        <h2>Proyectos</h2>
+        <div>
+            <img src="./images/Project/correo.svg" alt="correo" />
+            <img src="./images/Project/viajes.svg" alt="viajes" />
+        </div>
+        <div>
+            <img src="./images/Project/listas.svg" alt="listas" />
+            <img src="./images/Project/inmobiliarios.svg" alt="inmobiliarios" />
+        </div>
+    </section>
+    <h2>Habilidades</h2>
+    <section>
+        <div>
+            <spam><img src="./images/Project/habilidades/Docker.svg" alt="Docker" />Docker</spam>
+            <spam><img src="./images/Project/habilidades/html.svg" alt="html5" />html5</spam>
+            <spam><img src="./images/Project/habilidades/typescript.svg" alt="typescript" />typescript</spam>
+            <spam><img src="./images/Project/habilidades/mongodb.svg" alt="mongodb" />MongoDB</spam>
+        </div>
+        <div>
+            <spam><img src="./images/Project/habilidades/git.svg" alt="Git" />Git</spam>
+            <spam><img src="./images/Project/habilidades/css.svg" alt="css3" />Css3</spam>
+            <spam><img src="./images/Project/habilidades/reactjs.svg" alt="Reactjs" />Reactjs</spam>
+            <spam><img src="./images/Project/habilidades/mssql.svg" alt="Mysql" />Mysql</spam>
+        </div>
+        <div>
+            <spam><img src="./images/Project/habilidades/figma.svg" alt="Figma" />Figma</spam>
+            <spam><img src="./images/Project/habilidades/Vector.svg" alt="vector" />TaildwindCSS</spam>
+            <spam><img src="./images/Project/habilidades/vue.svg" alt="vue" />Vue</spam>
+            <spam><img src="./images/Project/habilidades/pgsql.svg" alt="Postgres" />Postgresql</spam>
+        </div>
+        <div>
+            <spam><img src="./images/Project/habilidades/node-js.svg" alt="nodejs" />Nodejs</spam>
+            <spam><img src="./images/Project/habilidades/javascript.svg" alt="java" />JavaScript</spam>
+            <spam><img src="./images/Project/habilidades/nestjs.svg" alt="Nestjs" />Nestjs</spam>
+        </div>
+    </section>
+    <section>
+        <h2>Contacto</h2>
+        <div>
+            <img src="./images/Project/Contacts/github.svg" alt="Github" />
+            <img src="./images/Project/Contacts/linkedin.svg" alt="Linkedin" />
+            <img src="./images/Project/Contacts/outlook.svg" alt="Outlook" />
+        </div>
     </section>
   </body>
-
-</html>
+  </html>
