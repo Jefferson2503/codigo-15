@@ -8,9 +8,164 @@ h1{
     font-size: 30px;
 
 }
-/* recocar que el selector id se puede usar una sola vez */
+/* recocar que el selector id se puede usar una sola vez en nuestar hoja de estilos*/
 #selector-id {
     color: orange;
     font-size: 20px;
 }
 
+button {
+    background-color: red;
+    padding: 10px;
+    border-radius: 15px;
+    width: 150px;
+    height: 40px;
+    border: none;
+    transition: all 3s ease;
+
+}
+
+
+button:hover {  
+    background-color: aqua;
+    padding: 
+}
+
+.seudoclase-hover:hover {
+    color: blue;
+    cursor:pointer;
+}
+.seudoclase-hover {
+    font-size: 20px;
+}
+.seudoclase-link-hover {
+    text-decoration: none;
+}
+.seudoclase-link-hover:hover {
+    text-decoration: underline;
+}
+
+.seudoclase-link-hover:active {
+    font-size: 40px;
+    color: orange;
+    border: 2px dotted #444;
+}
+.seudoclase-link-hover:focus{
+    color: brown; 
+     border: 2px dotted #444;
+}
+input:active {
+    background-color: yellow;
+}
+input:focus {
+    background-color: blue;
+}
+
+/* pseudo clase: primer y ultimo hijo */
+.hijos-seudo p:first-child {
+    background-color: red;
+}
+.hijos-seudo p:last-child {
+    background-color: green;
+}
+/* pseudo clase: tercer hijo */
+.hijos-seudo p:nth-child(3) {
+    background-color: coral;
+}
+/* pseudo clase: todo los hijos pares */
+
+.hijos-seudo p:nth-child(2n) {
+    background-color: darkolivegreen;
+}
+/* pseudo clase: todo los hijos impares */
+.hijos-seudo p:nth-child(2n-1) {
+    background-color:darkmagenta;
+}
+/* before */
+.prueba-before::before{
+
+
+}
+/* after */
+.prueba-after::after {
+    content: 'hola';
+    color: yellow;
+    background-color: blue;
+    width: 12 px;
+    padding: 6 px;
+}
+/* first letter */
+.prueba-first-letter::first-letter {
+    color: red;
+    font-size: 34 px;
+    text-decoration: underline;
+}
+.input1:required {
+    border: 1px solid red;
+}
+.input1:valid {
+    background-color: blue;
+    color: white;
+}
+.input1:invalid {
+    background-color: red;
+    color: white;
+}
+
+/* selectores padre */
+.padre ul li:nth-child(3) {
+    background-color: orangered;
+}
+.padre ul .selecciona-este-li {
+    background-color: green;
+}
+.padre li:nth-child(4) {
+    background-color: aqua;
+}
+/* la forma mas recomenda es usar una unica clase */
+
+.selecciona-este-li {
+    background-color: gold;
+}
+/* Herencia */
+.container {
+    color: blue;
+    font-size: 10px;
+    border: 1 px solid green;
+}
+.child {
+    border: inherit;
+    font-size: initial;
+}
+/* cascada todo el ultimo color*/
+.miparrafo {
+    padding: 10px;
+    color: red;
+}
+.miparrafo {
+    background-color: grey;
+    color: blue;
+}
+/* unidades de medidas absolutas - son las que no cambian ejemplo px */
+/* unidades de mediad relativas si van a cambiar ejemplo:rem.em.vw,vh */
+.caja1 {
+    background-color: brown;
+    width: 300px;
+    height: 300px;
+}
+
+.caja2 {
+    background-color: aquamarine;
+    width: 50%;
+    font-size: 30px;
+}
+.caja3 {
+    background-color: red;
+    width: 50%;
+    /* font-size: 20px; */
+    /* font-size: 1em; */
+    /* font-size: 2em; */
+    /* font-size: 1 rem; */
+    font-size: 3 rem;
+
+}

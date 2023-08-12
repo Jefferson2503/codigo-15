@@ -5,16 +5,75 @@
     <meta name="viewport" content="width=device-width, initial-scal" />
     <title>APRENDIENDO CSS</title>
     <link rel="stylesheet" href="./styles.css">  <!---Nos permitira enlazar con el archivo styles.css-->
-    <style>
-        body {
-            background-color:blueviolet;
-        }
-    </style>
+    <!-- <style> -->
+        <!-- body { -->
+            <!-- background-color:blueviolet; -->
+        <!-- } -->
+    <!-- </style> -->
   </head>
   <body>
+    <!-- Selectores -->
     <!-- <p style="font-size: 30px;">HOLA GENTE</p> -->
     <h1>Utilizando selector por elemento</h1>
     <h3 class="selector-clase">Utilizando el selector por clase</h3>
     <p id="selector-id">Utilizando selector por id</p>
+   <!-- Pseudo clases -->
+   <h2>Pseudo clases</h2>
+   <button>Boton con: hover</button>
+   <div class="seudoclase-hover">hola este es un div con:hover </div>
+   <a class="seudoclase-link-hover" href="">Este es un link con:hover</a>
+   <input type="text" />
+ <!--seudo-hijos-->
+   <h2>Hijos</h2>
+   <div class="hijos-seudo">
+    <p class="p">Parrafo 1</p>
+    <p class="p">Parrafo 2</p>
+    <p class="p">Parrafo 3</p>
+    <p class="p">Parrafo 4</p>
+    <p class="p">Parrafo 5</p>
+    <p class="p">Parrafo 6</p>
+   </div>
+ <!--seudo-elementos-->
+ <h2>::before</h2>
+ <div class="prueba-before">before</div>
+ <h2>::after</h2>
+ <div class="prueba-after">after</div>
+ <h2>::first letter </h2>
+ <p class="prueba-first-letter">Hola soy un parrafo</p>
+
+<!-- seudo clase de validacion -->
+<form>
+<input class="input1" type="text" placeholder="caja de texto" />
+<input class="input1" type="text" placeholder="caja de texto" required />
+<input type="submit" />
+</form>
+
+<!-- selectores combinados y multiples -->
+<div class="padre">
+    <ul>
+        <li>Item 1</li>
+        <li class="selecciona-este-li">Item 2</li>
+        <li>Item 3</li>
+        <li>Item 4</li>
+    </ul>
+</div>
+
+<!-- Herencia -->
+<h2>Herencia</h2>
+<div class="container">
+    <p>parrafo padre</p>
+    <div class="child">
+        <p>parrafo hijo</p>
+    </div>
+</div>
 </body>
 </html>
+<!-- cascada -->
+<h2>Cascada</h2>
+<div class="miparrafo">mi parrafo</div>
+
+<!-- Unidad de medida -->
+<h2>Unidades de medida</h2>
+<div class="caja1">caja 1</div>
+<div class="caja2">caja 2</div>
+<div class="caja3">caja 3</div>
