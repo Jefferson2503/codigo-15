@@ -1,0 +1,16 @@
+h1{
+    font-family: helvetica;
+    color: cadetblue;
+    font-size: 50px;
+}
+.selector-clase {
+    color: red;
+    font-size: 30px;
+
+}
+/* recocar que el selector id se puede usar una sola vez */
+#selector-id {
+    color: orange;
+    font-size: 20px;
+}
+
